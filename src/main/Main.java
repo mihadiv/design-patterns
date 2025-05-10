@@ -1,5 +1,8 @@
 package src.main;
 
+import src.composite.NotificationGroup;
+import src.composite.NotificationTarget;
+import src.composite.UserDevice;
 import src.proxy.AbstractStreamingService;
 import src.proxy.StreamingAccessProxy;
 import src.proxy.StreamingService;
@@ -55,6 +58,35 @@ public class Main {
 
         //------- 4. COMPOSITE -------
 
+        /*
+        NotificationTarget iCloudGroup = new NotificationGroup();
+        NotificationTarget phone = new UserDevice("Mihaela's Iphone");
+        NotificationTarget tablet = new UserDevice("Mihaela's Ipad");
+        NotificationTarget laptop = new UserDevice("Mihaela's Macbook");
+
+        iCloudGroup.addTarget(phone);
+        iCloudGroup.addTarget(tablet);
+        iCloudGroup.addTarget(laptop);
+
+        iCloudGroup.send("System update available!");
+        */
+
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
