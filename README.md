@@ -8,10 +8,16 @@ This repository contains Java implementations of common software design patterns
 
 ## 🧩 Implemented Patterns
 
+- ✅ Adapter
+- ✅ Facade
+- ✅ Proxy
 - ✅ Composite
+- 🔜 Flyweight
+- 🔜 Decorator
+- 🔜 Chain
+- 🔜 Command
 - 🔜 Strategy
 - 🔜 Observer
-- 🔜 Singleton
 
 > More patterns will be added progressively during the course.
 
@@ -19,21 +25,13 @@ This repository contains Java implementations of common software design patterns
 
 ```
 src/
+├── main/
+│   └── Main.java
 └── pattern-name/
-    ├── Main.java
     └── ClassExample.java
 ```
 
 Each folder corresponds to one design pattern, with a minimal working Java example.
-
-## 🚀 How to Run
-
-You can run each example using any Java IDE (like IntelliJ IDEA), or from the terminal:
-
-```bash
-javac src/pattern-name/*.java
-java src/pattern-name/Main
-```
 
 ## 🎯 Goal
 
@@ -44,4 +42,4 @@ The goal of this project is to:
 
 ## 📚 Course
 
-**Software Quality and Testing** — University project
+**Software Quality and Testing** — university practice only
