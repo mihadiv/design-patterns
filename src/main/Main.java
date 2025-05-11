@@ -4,6 +4,9 @@ import src.command.Canvas;
 import src.command.DrawCircleCommand;
 import src.command.DrawRectangleCommand;
 import src.command.DrawingBoard;
+import src.observer.CityWeatherStation;
+import src.observer.WeatherAppClient;
+import src.observer.WeatherStation;
 import src.strategy.AscendingSort;
 import src.strategy.DescendingSort;
 import src.strategy.Sorter;
@@ -147,7 +150,7 @@ public class Main {
 
         //------- 9. STRATEGY -------
 
-
+        /*
         Sorter sorter = new Sorter();
         List<Integer> values = List.of(4, 1, 7, 3);
         System.out.println("List before sorting: " + values);
@@ -166,9 +169,19 @@ public class Main {
         );
         result = sorter.sort(values);
         System.out.println("Odd numbers only (sorted): " + result);
+        */
 
         //------- 10. OBSERVER -------
 
+        CityWeatherStation westCoastStation = new CityWeatherStation("Los Angeles");
+        WeatherAppClient user1 = new WeatherAppClient();
+        WeatherAppClient user2 = new WeatherAppClient();
+        westCoastStation.subscribe(user1);
+        westCoastStation.subscribe(user2);
+        westCoastStation.notifiObservers("Thank you for subscribing!");
+        westCoastStation.updateWeather("Rain expected tomorrow");
+        westCoastStation.unsubscribe(user1);
+        westCoastStation.updateWeather("Sunny and warn today");
 
     }
 }
