@@ -4,6 +4,12 @@ import src.command.Canvas;
 import src.command.DrawCircleCommand;
 import src.command.DrawRectangleCommand;
 import src.command.DrawingBoard;
+import src.strategy.AscendingSort;
+import src.strategy.DescendingSort;
+import src.strategy.Sorter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -141,7 +147,21 @@ public class Main {
 
         //------- 9. STRATEGY -------
 
+        /*
+        Sorter sorter = new Sorter();
+        List<Integer> list = List.of(4, 1, 7, 3);
+        System.out.println("List before sorting: " + list);
+
+        sorter.setSortStrategy(new AscendingSort());
+        System.out.println("Ascending: " + sorter.sort(list));
+
+        sorter.setSortStrategy(new DescendingSort());
+        System.out.println("Descending: " + sorter.sort(list));
+        */
+
         //------- 10. OBSERVER -------
+
+
     }
 }
 
