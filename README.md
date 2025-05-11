@@ -12,12 +12,13 @@ This repository contains Java implementations of common software design patterns
 - ✅ Facade
 - ✅ Proxy
 - ✅ Composite
-- 🔜 Flyweight
-- 🔜 Decorator
-- 🔜 Chain
-- 🔜 Command
-- 🔜 Strategy
-- 🔜 Observer
+- ✅ Flyweight
+- ✅ Decorator
+- ✅ Chain
+- ✅ Command
+- ✅ Strategy
+- ✅ Observer
+- 🔜 ...
 
 > More patterns will be added progressively during the course.
 
