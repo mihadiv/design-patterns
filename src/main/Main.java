@@ -147,17 +147,25 @@ public class Main {
 
         //------- 9. STRATEGY -------
 
-        /*
+
         Sorter sorter = new Sorter();
-        List<Integer> list = List.of(4, 1, 7, 3);
-        System.out.println("List before sorting: " + list);
+        List<Integer> values = List.of(4, 1, 7, 3);
+        System.out.println("List before sorting: " + values);
 
         sorter.setSortStrategy(new AscendingSort());
-        System.out.println("Ascending: " + sorter.sort(list));
+        List<Integer> result = sorter.sort(values);
+        System.out.println("Ascending: " + result);
 
         sorter.setSortStrategy(new DescendingSort());
-        System.out.println("Descending: " + sorter.sort(list));
-        */
+        System.out.println("Descending: " + sorter.sort(values));
+
+        sorter.setSortStrategy(list -> list.stream()
+                .filter(i -> i % 2 != 0)
+                .sorted()
+                .toList()
+        );
+        result = sorter.sort(values);
+        System.out.println("Odd numbers only (sorted): " + result);
 
         //------- 10. OBSERVER -------
 
