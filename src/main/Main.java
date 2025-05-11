@@ -1,22 +1,9 @@
 package src.main;
 
-import src.chain.HRDepartment;
-import src.chain.LeaveRequestHandler;
-import src.chain.Manager;
-import src.chain.TeamLead;
-import src.composite.NotificationGroup;
-import src.composite.NotificationTarget;
-import src.composite.UserDevice;
-import src.decorator.Beverage;
-import src.decorator.CoffeeWithMilk;
-import src.decorator.CoffeeWithSugar;
-import src.decorator.SimpleCoffe;
-import src.flyweight.CustomEmojiFactory;
-import src.flyweight.EmojiPosition;
-import src.flyweight.EmojiSymbol;
-import src.proxy.AbstractStreamingService;
-import src.proxy.StreamingAccessProxy;
-import src.proxy.StreamingService;
+import src.command.Canvas;
+import src.command.DrawCircleCommand;
+import src.command.DrawRectangleCommand;
+import src.command.DrawingBoard;
 
 public class Main {
 
@@ -137,6 +124,24 @@ public class Main {
 
         //------- 8. COMMAND -------
 
+        /*
+        Canvas canvas = new Canvas();
+        DrawCircleCommand circle = new DrawCircleCommand(canvas);
+        DrawRectangleCommand rectangle = new DrawRectangleCommand(canvas);
+
+        DrawingBoard board = new DrawingBoard();
+        board.addCommand(circle);
+        board.addCommand(rectangle);
+        board.drawAll();
+
+        DrawCircleCommand otherCircle = new DrawCircleCommand(canvas);
+        board.addCommand(otherCircle);
+        board.drawAll();
+        */
+
+        //------- 9. STRATEGY -------
+
+        //------- 10. OBSERVER -------
     }
 }
 
