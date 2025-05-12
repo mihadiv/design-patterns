@@ -9,6 +9,6 @@ public class CityWeatherStation extends WeatherStation {
     }
 
     public void updateWeather(String report) {
-        notifiObservers("[" + cityName + "] Weather update: " + report);
+        notifyObservers("[" + cityName + "] Weather update: " + report);
     }
 }

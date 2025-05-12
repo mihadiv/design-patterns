@@ -2,7 +2,6 @@ package src.observer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Observer;
 
 //Observable
 public abstract class WeatherStation {
@@ -17,7 +16,7 @@ public abstract class WeatherStation {
         observers.remove(observer);
     }
 
-    public void notifiObservers(String message) {
+    public void notifyObservers(String message) {
         for (WeatherObserver o : observers) {
             o.receiveNotification(message);
         }
