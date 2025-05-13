@@ -3,6 +3,7 @@ package src.command;
 import java.util.ArrayList;
 import java.util.List;
 
+// Invoker
 public class DrawingBoard {
 
     private List<DrawCommand> commands = new ArrayList<>();

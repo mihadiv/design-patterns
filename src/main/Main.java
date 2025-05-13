@@ -1,18 +1,7 @@
 package src.main;
 
-import src.command.Canvas;
-import src.command.DrawCircleCommand;
-import src.command.DrawRectangleCommand;
-import src.command.DrawingBoard;
 import src.observer.CityWeatherStation;
 import src.observer.WeatherAppClient;
-import src.observer.WeatherStation;
-import src.strategy.AscendingSort;
-import src.strategy.DescendingSort;
-import src.strategy.Sorter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
@@ -178,7 +167,7 @@ public class Main {
         WeatherAppClient user2 = new WeatherAppClient();
         westCoastStation.subscribe(user1);
         westCoastStation.subscribe(user2);
-        westCoastStation.notifiObservers("Thank you for subscribing!");
+        westCoastStation.notifyObservers("Thank you for subscribing!");
         westCoastStation.updateWeather("Rain expected tomorrow");
         westCoastStation.unsubscribe(user1);
         westCoastStation.updateWeather("Sunny and warn today");

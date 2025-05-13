@@ -1,0 +1,140 @@
+-> OBSERVER:
+
+1. public interface Observer (observatorul)
+2. public abstract class Observable (subiectul) cu:
+    - lista observers protected List<Observer> = new ArrayList()
+    - public void de adaugare si eliminare observers din lista
+    - public void notificare observatori cu foreach
+3. public class ConcreteObservable extends Observable cu:
+    - variabila private, constructor public, public void
+4. public class ConcreteObserver implements Observer cu:
+    - override pe functiile interfetei
+5. main cu:
+    - creare ConcreteObservable, ConcreteObserver
+    - adaugare instantei observer in observable prin functia de adaugare
+    - idem stergere, notificare, update weather/publish video
+
+-> FACADE:
+
+1. class Clasa1,2...n cu:
+    - public void actiuni specifice fiecarei clase
+2. public class Facade cu:
+    - private Clasa c = new Clasa();
+    - public void actiuni ce incorporeaza instantele de tip c, fiecare cu metoda specifica
+3. main cu:
+    - creare instanta facade
+    - procesare functiile instantei
+
+-> FLYWEIGHT:
+
+1. public interface Flyweight
+2. public class Position cu:
+    - private int linie, coloana
+    - public constructor fara param./cu param.
+    - getter si setter fiecare
+3. public class FlyweightConcret implements Flyweight cu:
+    - private variabile, public constructor, override
+4. public class FlyweightFactory cu:
+    - private Map<tip nume, Flyweight> colectie = new HashMap<...>();
+    - private int count de instante create
+    - public Flyweight get cu if !colectie.containsKey(nume)
+    - public int get count
+5. main cu:
+    - creare instanta Factory
+    - instanta a interfetei cu factory.get
+    - display instanta interfata cu adaugate new Position
+    - sout get cout
+
+-> ADAPTER:
+
+1. public interface AbstractOldSystem
+2. public interface AbstractNewSystem
+3. public class OldSystem implements AbstractOldSystem cu:
+    - private static final int, private int
+    - override public boolean
+4. public class NewSystem implements AbstractNewSystem cu:
+    - override public boolean
+5. public class ObjectAdapter implements AbstractNewSystem cu:
+    - private AbstractOldSystem oldSystem;
+    - public constructor
+    - override
+6. public class ClassAdapter extends OlsSystem implements AbstractNewSystem cu:
+    - override
+7. main cu:
+    - AbstractNewSystem newSystem = new NewSystem();
+    - newSystem.metoda
+    - newSystem = new ObjectAdapter(new OldSystem());
+    - newSystem.metoda
+    - newSystem = new ClassAdapter();
+    - newSystem.metoda
+
+-> PROXY:
+
+1. public interface AbstractService
+2. public class Service implements AbstractService cu:
+    - override
+3. public class Proxy implements AbstractService cu:
+    - private AbstractService service;
+    - private int count = 0;
+    - public constructor
+    - override cu if count >< nr
+4. main cu:
+    - AbstractService service = new Service();
+    - booleasn result = service.metoda
+    - service = new Proxy(new Service());
+    - fori cu result = service.metoda si sout
+    - result = service.metoda inca odata
+
+-> COMPOSITE:
+
+1. public interface Componenta cu:
+    - void send, add, remove
+    - List<Componenta> get();
+2. public class NodFrunza implements Componenta cu:
+    - private name;
+    - constructor public
+    - override send cu sout
+    - override add, remove, get cu thr UnsupportedOperationException();
+3. public class Composite implements Componenta cu:
+    - private List<Componenta> componente = new ArrayList();
+    - override cu implementare toate metodele
+4. main cu:
+    - Componenta composite = new Composite();
+    - Componenta frunza1 = new NodFrunza(...);
+    - Componenta frunza2 = new NodFrunza(...);
+    - composite.add(frunza1,2...);
+    - composite.send(mesaj);
+
+-> DECORATOR:
+
+1. public interface AbstractProduct
+2. public class Product implements AbstractProduct cu:
+    - private variabile
+    - get si set
+    - override
+3. public class Decorator implements AbstractProduct cu:
+    - private AbstractProduct product
+    - public constructor
+    - override
+4. public class ConcreteDecorator extends Decorator cu:
+    - private variabila
+    - public ConcreteDecorator(AbstractProduct product){ super(product) }
+    - get si set
+5. main cu:
+    - AbstractProduct product = new Product();
+    - product.metoda
+    - ConcreteDecorator productDecorated = new ConcreteDecorator(product);
+    - productDecorated.metoda
+
+-> CHAIN:
+
+
+
+-> COMMAND:
+
+
+->STRATEGY:
+
+
+
+

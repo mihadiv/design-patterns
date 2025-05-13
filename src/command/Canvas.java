@@ -1,5 +1,6 @@
 package src.command;
 
+// Receiver
 public class Canvas {
 
     public void drawCircle() {

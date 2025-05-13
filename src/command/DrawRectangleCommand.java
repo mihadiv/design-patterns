@@ -1,5 +1,6 @@
 package src.command;
 
+// Concrete Command
 public class DrawRectangleCommand implements DrawCommand {
 
     private Canvas canvas;

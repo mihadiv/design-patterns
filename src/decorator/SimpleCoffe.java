@@ -33,6 +33,6 @@ public class SimpleCoffe implements Beverage {
     @Override
     public void serve() {
         String label = (producer == null) ? "house coffee" : producer + " coffee";
-        System.out.println("The " + label + " is served!");
+        System.out.println("The " +              label + " is served!");
     }
 }
