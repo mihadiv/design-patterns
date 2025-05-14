@@ -2,6 +2,7 @@ package src.adapter;
 
 import java.util.Scanner;
 
+// OLd to New
 public class AuthObjectAdapter implements AbstractNewAuthSystem {
 
     private AbstractOldAuthSystem oldAuthSystem;

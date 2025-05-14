@@ -3,7 +3,7 @@ package src.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-//Observable
+// Observable (Subject)
 public abstract class WeatherStation {
 
     protected List<WeatherObserver> observers = new ArrayList<>();

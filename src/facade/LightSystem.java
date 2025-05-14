@@ -1,5 +1,6 @@
 package src.facade;
 
+// Subsystem
 class LightSystem {
 
     public void turnOnLights() {

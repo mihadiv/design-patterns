@@ -2,6 +2,7 @@ package src.composite;
 
 import java.util.List;
 
+// Leaf
 public class UserDevice implements NotificationTarget {
 
     private String deviceName;

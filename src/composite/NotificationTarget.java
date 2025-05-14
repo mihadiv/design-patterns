@@ -2,6 +2,7 @@ package src.composite;
 
 import java.util.List;
 
+// Component
 public interface NotificationTarget {
 
     void send(String message);

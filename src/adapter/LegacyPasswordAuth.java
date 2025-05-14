@@ -1,7 +1,6 @@
 package src.adapter;
 
-// Legacy inseamna cod vechi, dar inca functional, ce poate fi inlocuit sau adaptat cu ceva nou
-
+// OldSystem
 public class LegacyPasswordAuth implements AbstractOldAuthSystem {
 
     private static final int MAX_ATTEMPTS = 3;
@@ -26,3 +25,5 @@ public class LegacyPasswordAuth implements AbstractOldAuthSystem {
         }
     }
 }
+
+// Legacy inseamna cod vechi, dar inca functional, ce poate fi inlocuit sau adaptat cu ceva nou

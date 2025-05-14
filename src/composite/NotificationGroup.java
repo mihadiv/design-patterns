@@ -3,6 +3,7 @@ package src.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+// Composite
 public class NotificationGroup implements NotificationTarget {
 
     private List<NotificationTarget> targets = new ArrayList<>();

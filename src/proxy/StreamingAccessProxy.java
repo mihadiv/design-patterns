@@ -1,5 +1,6 @@
 package src.proxy;
 
+// ServiceProxy
 public class StreamingAccessProxy implements AbstractStreamingService {
 
     private AbstractStreamingService streamingService;

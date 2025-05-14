@@ -1,5 +1,6 @@
 package src.facade;
 
+// Subsystem
 class Thermostat {
 
     public void setThermostat(int degrees) {

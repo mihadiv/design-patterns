@@ -1,5 +1,6 @@
 package src.decorator;
 
+// ConcreteDecorator
 public class CoffeeWithMilk extends CoffeDecorator {
 
     public CoffeeWithMilk(Beverage beverage) {

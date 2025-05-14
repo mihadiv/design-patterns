@@ -1,5 +1,6 @@
 package src.decorator;
 
+// ConcreteComponent
 public class SimpleCoffe implements Beverage {
 
     private String producer;

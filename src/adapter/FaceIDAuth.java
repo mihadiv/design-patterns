@@ -1,5 +1,6 @@
 package src.adapter;
 
+// NewSystem
 public class FaceIDAuth implements AbstractNewAuthSystem {
 
     @Override

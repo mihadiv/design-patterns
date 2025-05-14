@@ -2,6 +2,7 @@ package src.adapter;
 
 import java.util.Scanner;
 
+// OLd to New
 public class AuthClassAdapterLegacy extends LegacyPasswordAuth implements AbstractNewAuthSystem {
     @Override
     public boolean biometricLogin() {

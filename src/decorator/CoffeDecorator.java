@@ -1,6 +1,7 @@
 package src.decorator;
 
-public class CoffeDecorator implements Beverage {
+// Decorator
+public abstract class CoffeDecorator implements Beverage {
 
     private Beverage beverage;
 

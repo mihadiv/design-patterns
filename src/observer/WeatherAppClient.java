@@ -1,5 +1,6 @@
 package src.observer;
 
+// ConcreteObserver
 public class WeatherAppClient implements WeatherObserver {
 
     @Override

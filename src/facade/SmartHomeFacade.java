@@ -1,5 +1,6 @@
 package src.facade;
 
+// SystemFacade
 public class SmartHomeFacade {
 
     private DoorLockSystem doors = new DoorLockSystem();

@@ -1,5 +1,6 @@
 package src.observer;
 
+// ConcreteObservable (ConcreteSubject)
 public class CityWeatherStation extends WeatherStation {
 
     private String cityName;
